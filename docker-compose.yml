@@ -16,7 +16,7 @@ services:
       context: docker/nginx
     container_name: ${APP_NAME:?err}-nginx
     volumes:
-      - ./:/var/www/html
+      - ./:/var/www
     ports:
       - "80:80"
       - "443:443"
